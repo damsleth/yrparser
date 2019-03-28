@@ -1,0 +1,53 @@
+body {
+    font-family: Meslo, Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(rgba(148, 207, 247,.9),rgba(0,0,0,0.1));
+    overflow: hidden;
+}
+
+#wrapper {
+    display: flex;
+    min-height: 100%;
+    max-width:100%;
+}
+
+#weathercontainer {
+    display: inline-flex;
+    margin: auto;
+}
+
+#wtable {
+    padding: 5px 0;
+    border: 1px solid #eee;
+    background-color: #fbfafa;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.1)
+}
+
+#wtable th{
+    font-size:.7em;
+    font-weight: normal;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+#wtable td {
+    padding: 5px;
+    /* min-width: 50px; */
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    text-align: center;
+    font-size:.8em;
+}
+
+#wtable td:first-of-type, #wtable th:first-of-type {
+    border-left: none;
+}
+
+#wtable td:last-of-type, #wtable th:last-of-type {
+    border-right: none;
+}
+
+.weathericon {
+    width: 38px;
+    height: 38px;
+}
