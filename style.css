@@ -1,40 +1,39 @@
 body {
     font-family: Meslo, Arial, Helvetica, sans-serif;
     height: 100vh;
-    background-image: linear-gradient(rgba(65, 118, 153, 0.5),rgba(148, 207, 247,.5),rgba(255, 205, 129, 0.281));
+    background-image: linear-gradient(rgba(65, 118, 153, 0.5), rgba(148, 207, 247, .5), rgba(255, 205, 129, 0.281));
     overflow: hidden;
 }
 
 #wrapper {
     display: flex;
     min-height: 100%;
-    max-width:100%;
+    max-width: 100%;
 }
 
 #weathercontainer {
     display: inline-flex;
     margin: auto;
     position: absolute;
-    left:30%;
-    top:50%;
+    left: 2%;
+    top: 2%;
 }
 
 #wtable {
-    /* padding: 0px 0;
-    border-radius: 2px; */
-    background-color: #fcfbf9;
-    opacity: 1;
-    box-shadow: 0px 19px 24px rgba(255, 239, 188, 0.1)
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 10px 25px rgba(0, 200, 160, 0.1);
 }
 
-#wtable th{
-    font-size:.8em;
-    padding:10px 15px 10px 10px;
+#wtable th {
+    font-size: .8em;
+    padding: 10px 15px 10px 10px;
     font-weight: normal;
     border-right: 0px solid #eee;
     border-left: 0px solid #eee;
     color: #999999;
-    background-color:#e6f0f8;
+    background-color: #e6f0f8;
 }
 
 #wtable td {
@@ -43,15 +42,17 @@ body {
     border-right: 0px solid #eee;
     border-left: 0px solid #eee;
     text-align: center;
-    font-size:1em;
-    font-family: "Fira code","Monaco","Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+    font-size: 1em;
+    font-family: "Fira code", "Monaco", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
 }
 
-#wtable td:first-of-type, #wtable th:first-of-type {
+#wtable td:first-of-type,
+#wtable th:first-of-type {
     border-left: none;
 }
 
-#wtable td:last-of-type, #wtable th:last-of-type {
+#wtable td:last-of-type,
+#wtable th:last-of-type {
     border-right: none;
 }
 
